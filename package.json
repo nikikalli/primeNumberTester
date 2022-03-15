@@ -1,0 +1,16 @@
+{
+  "name": "terveystaloteht",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"cd frontend && npm start\" \"cd backend && npm start\"",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install-all": "concurrently \"npm i\" \"cd frontend && npm i\" \"cd backend && npm i\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
