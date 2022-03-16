@@ -4,7 +4,7 @@ This application takes number(s) as an input and checks whether the input number
 
 The application uses 2 different forms: Check Sum And Prime, Check Prime. The first one takes `n < 20` numbers separated with commas (with no space in between), computes the sum of numbers and checks whether the sum is a prime number.
 
-The second form take one single number (max length 20) and checks whether its a prime number.
+The second form takes one single number (max length 20) and checks whether its a prime number.
 
 # SETUP
 
