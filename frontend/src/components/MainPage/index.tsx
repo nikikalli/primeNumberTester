@@ -39,19 +39,19 @@ export const Form: FC = () => {
     async (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
 
-      if (testRegexAndLength(val, regex)) {
-        await axios
-          .post(`http://localhost:5000/api/?action=${link}${val}`)
-          .then((res) => {
-            console.log(res);
-            console.log("data received");
-            setRefetchData(!refetchData);
-          })
-          .catch((err) => {
-            console.log(err);
-          });
-      } else {
-        window.alert(text);
+      try {
+        if (testRegexAndLength(val, regex)) {
+          const res = await axios.post(
+            `http://localhost:5000/api/?action=${link}${val}`
+          );
+          console.log(res);
+          console.log("data received");
+          setRefetchData(!refetchData);
+        } else {
+          window.alert(text);
+        }
+      } catch (err) {
+        console.error(err);
       }
     };
 
