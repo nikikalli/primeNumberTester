@@ -8,7 +8,7 @@ The second form takes one single number (max length 20) and checks whether its a
 
 # SETUP
 
-You need to install [nodejs](https://nodejs.org/en/). This project uses npm. For installing all dependencies run `npm run install-all` in the root directory.
+You need to install [nodejs](https://nodejs.org/en/). This project uses npm. For installing all dependencies first run `npm i` and after `npm run install-all` in the root directory.
 
 # RUNNING
 
