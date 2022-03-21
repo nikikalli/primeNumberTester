@@ -36,7 +36,6 @@ app.post("/api", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const action = req.query.action;
     if (action === "checkprime") {
         const num = req.query.number;
-        console.log(num);
         prime1 = (0, primeCalculator_1.isPrime)(Number(num));
         res.status(200);
     }

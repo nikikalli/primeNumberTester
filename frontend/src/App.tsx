@@ -1,4 +1,3 @@
-import "./App.css";
 import React, { FC } from "react";
 import { Form } from "./components/MainPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
