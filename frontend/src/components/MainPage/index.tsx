@@ -56,9 +56,9 @@ export const Form: FC = () => {
     };
 
   const text1 =
-    "The input is too long or wrong input syntax.\nInput need to be a collection of numbers separated by commas.\nThe right syntax is as follows: 1,2,3,4";
+    "Incorrect input syntax or the input is too long.\nInput needs to be a collection of numbers separated by commas.\nThe right syntax is as follows: 1,2,3,4";
   const text2 =
-    "Input is too long or input syntax is incorrect.\nInput needs to be a number\nThe syntax is as follows: 1234";
+    "Input is too long or input syntax is incorrect.\nInput needs to be a number\nThe right syntax is as follows: 1234";
 
   return (
     <StyledHolder>
@@ -79,7 +79,7 @@ export const Form: FC = () => {
       {data && (
         <StyledFirstResult>
           <div>Sum of numbers: {data.sum}</div>
-          <div>The sum is prime number: {String(data.secondendpoint)}</div>
+          <div>The sum is a prime number: {String(data.secondendpoint)}</div>
         </StyledFirstResult>
       )}
       <SubForm
@@ -98,7 +98,7 @@ export const Form: FC = () => {
 
       {data && (
         <StyledFirstResult>
-          <div>The number is prime: {String(data.firstendpoint)}</div>
+          <div>The number is a prime num: {String(data.firstendpoint)}</div>
         </StyledFirstResult>
       )}
     </StyledHolder>
