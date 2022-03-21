@@ -30,7 +30,6 @@ app.post("/api", async (req, res) => {
 
   if (action === "checkprime") {
     const num = req.query.number;
-    console.log(num);
 
     prime1 = isPrime(Number(num));
     res.status(200);

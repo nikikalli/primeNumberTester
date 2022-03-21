@@ -9,7 +9,6 @@ export const Form: FC = () => {
   const [sumValue, setSumValue] = useState("");
 
   const [data, setData] = useState<JsonData | undefined>(undefined);
-  console.log(sumData);
 
   const [, setLoading] = useState(false);
   const [, setError] = useState(false);
@@ -29,7 +28,6 @@ export const Form: FC = () => {
       .finally(() => {
         setLoading(false);
       });
-    console.log("useEffect");
   }, [refetchData]);
 
   const testRegexAndLength = (input: string, regex: RegExp) => {
